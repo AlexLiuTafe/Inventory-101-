@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -284,6 +284,7 @@ GameObject:
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
   - component: {fileID: 534669906}
+  - component: {fileID: 534669907}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -362,7 +363,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7494fd5b40eea724da159b91365671c2, type: 3}
   m_Name: 
@@ -516,6 +517,39 @@ MonoBehaviour:
   - name: Hand
     location: {fileID: 949825108}
     curItem: {fileID: 0}
+--- !u!114 &534669907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4324c473d95c4e948b75bfde002dddca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showInv: 0
+  slotX: 7
+  slotY: 5
+  inventorySize:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  isDragging: 0
+  draggedFrom: 0
+  droppedItem: {fileID: 0}
+  toolTipItem: 0
+  showToolTip: 0
+  toolTipRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  scr: {x: 0, y: 0}
 --- !u!1 &785503463
 GameObject:
   m_ObjectHideFlags: 0
@@ -962,6 +996,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871359727771459646, guid: 8bbf1eab54c880847893eb090cbb4c71,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8871359727771459586, guid: 8bbf1eab54c880847893eb090cbb4c71,
         type: 3}
@@ -1426,7 +1465,7 @@ PrefabInstance:
     - target: {fileID: 8871359729877418974, guid: 8bbf1eab54c880847893eb090cbb4c71,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -0.000030517578
       objectReference: {fileID: 0}
     - target: {fileID: 8871359728328719497, guid: 8bbf1eab54c880847893eb090cbb4c71,
         type: 3}
@@ -1643,6 +1682,22 @@ PrefabInstance:
       propertyPath: m_fontColorGradient.bottomRight.b
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8871359729056087157, guid: 8bbf1eab54c880847893eb090cbb4c71,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 8871359729056087157, guid: 8bbf1eab54c880847893eb090cbb4c71,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871359729056087157, guid: 8bbf1eab54c880847893eb090cbb4c71,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8871359727782362577, guid: 8bbf1eab54c880847893eb090cbb4c71,
         type: 3}
       propertyPath: m_havePropertiesChanged
@@ -1816,7 +1871,7 @@ PrefabInstance:
     - target: {fileID: 8871359728227226745, guid: 8bbf1eab54c880847893eb090cbb4c71,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -26.87201
+      value: -26.871948
       objectReference: {fileID: 0}
     - target: {fileID: 8871359728472621762, guid: 8bbf1eab54c880847893eb090cbb4c71,
         type: 3}
@@ -1872,6 +1927,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 0.52310383
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871359727771459587, guid: 8bbf1eab54c880847893eb090cbb4c71,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bbf1eab54c880847893eb090cbb4c71, type: 3}
