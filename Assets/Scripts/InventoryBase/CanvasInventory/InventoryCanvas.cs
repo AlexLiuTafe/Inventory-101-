@@ -107,5 +107,20 @@ public class InventoryCanvas : MonoBehaviour
         valueInt.text = selectedItem.Value.ToString();
 
     }
+    public void SortAll()
+    {
+
+    }
+    public void SortIngredient()
+    {
+        sortType = ItemType.Ingredient;
+        for (int i = 0; i < inv.Count; i++)
+        {
+            inv[i].Type = sortType;
+            selectedItem = inv[i];
+            
+        }
+        
+    }
 }
 
